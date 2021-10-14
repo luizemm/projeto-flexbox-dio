@@ -24,6 +24,8 @@ div img {
     max-width: 800px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
+    padding: 10px 15px;
 }
 
 header {
@@ -119,7 +121,7 @@ header .list-items li a{
     flex-direction: column;
     padding-top: 50px;
     padding-bottom: 100px;
-    height: 350px;
+    min-height: 350px;
     justify-content: space-between;
 }
 
@@ -166,20 +168,25 @@ header .list-items li a{
 .item-servico img {
     width: 80%;
     margin: auto;
-}
-
-#roteiro img {
     max-width: 160px;
 }
 
 #planos {
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 90vh;
+    padding-top: 50px;
+}
+
+#planos h2{
+    font-size: 32px;
+    color: #122A57;
 }
 
 .list-planos {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .item-plano {
@@ -187,6 +194,7 @@ header .list-items li a{
     border: 5px solid #122A57;
     margin-right: 20px;
     padding: 10px;
+    max-width: 240px;
 }
 
 .item-plano .btn-saiba-mais {
@@ -214,4 +222,77 @@ header .list-items li a{
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    margin: 10px 0;
+}
+
+.item-plano ul li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-plano ul li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #122A57;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #122A57;
+    height: 70px;
+    display: flex;
+}
+
+footer .footer {
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* mobile */
+
+@media(max-width: 992px){
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao {
+        width: 100%;
+    }
+
+    #quem-somos {
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img {
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .list-servicos {
+        flex-direction: column;
+    }
+
+    .item-servico img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .list-planos {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-plano {
+        max-width: 90%;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
