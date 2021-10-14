@@ -66,13 +66,14 @@ header .list-items li a{
     margin-bottom: 10px;
 }
 
-.texto-apresentacao a {
+.btn-saiba-mais {
     background-color: #122A57;
     color: #fff;
     text-align: center;
     border-radius: 30px;
     display: block;
-    padding: 15px 10px;
+    width: 180px;
+    line-height: 50px;
     margin: 10px 0;
 }
 
@@ -80,6 +81,7 @@ header .list-items li a{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 #quem-somos h2 {
@@ -102,4 +104,114 @@ header .list-items li a{
     margin-bottom: 10px;
     width: 90%;
     text-align: justify;
+}
+
+#quem-somos img {
+    min-width: 420px;
+}
+
+.container-externo {
+    background-color: #122A57;
+    width: 100%;
+}
+
+#servicos {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    height: 350px;
+    justify-content: space-between;
+}
+
+#servicos h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.list-servicos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-servicos .titulo-servico {
+    margin-bottom: 20px;
+}
+
+.list-servicos .item-servico {
+    text-align: center;
+}
+
+.item-servico a {
+    /* 
+    Modo como a professora faz o botão
+    */
+    line-height: 60px;
+    text-align: center; 
+    background-color: #fff;
+    color: #122A57;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.item-servico p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.item-servico img {
+    width: 80%;
+    margin: auto;
+}
+
+#roteiro img {
+    max-width: 160px;
+}
+
+#planos {
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.list-planos {
+    display: flex;
+    align-items: flex-end;
+}
+
+.item-plano {
+    flex: 1;
+    border: 5px solid #122A57;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.item-plano .btn-saiba-mais {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item-plano h3 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.item-plano h3::after {
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 15px;
+}
+
+.item-plano ul {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
 }
